@@ -27,8 +27,8 @@ export default function Header() {
                             </div>
 
                         </div>
-                        <div className={styles.social} class="animate__animated animate__bounce">
-                            <a href=""><i><BsFacebook /></i></a>
+                        <div className={styles.social}>
+                            <a href=""><BsFacebook /></a>
                             <a href=""><BsLinkedin /></a>
                             <a href=""><BsGithub /></a>
                             <a className={styles.download} href="">
@@ -40,38 +40,35 @@ export default function Header() {
                         </div>
                     </div>
                     <div className={styles.secondCol}>
-                        <div className={styles.home}>
-                            <a href="index.html">
-                                INÍCIO
-                                <p>Home</p>
-                            </a>
+                        <span class='toggle'>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </span>
+                        <div class='menu'>
+                            <div class='menuContent'>
+                                <a href="index.html" className={styles.home}>
+                                    INÍCIO
+                                    <p>Home</p>
+                                </a>
 
-                        </div>
-                        <div className={styles.about}>
-                            <a href="index.html">
-                                SOBRE
-                                <p>About</p>
-                            </a>
-                        </div>
-                        <div className={styles.portifolio}>
-                            <a href="index.html">
-                                PORTIFÓLIO
-                                <p>Portifolio</p>
-                            </a>
-                        </div>
-                        <div className={styles.projects}>
-                            <a href="index.html">
-                                PROJETOS
-                                <p>Projects</p>
-                            </a>
-
-                        </div>
-                        <div className={styles.contacts}>
-                            <a href="index.html">
-                                CONTATOS
-                                <p>Contacts</p>
-                            </a>
-
+                                <a href="index.html" className={styles.about}>
+                                    SOBRE
+                                    <p>About</p>
+                                </a>
+                                <a href="index.html" className={styles.portifolio}>
+                                    PORTIFÓLIO
+                                    <p>Portifolio</p>
+                                </a>
+                                <a href="index.html" className={styles.projects}>
+                                    PROJETOS
+                                    <p>Projects</p>
+                                </a>
+                                <a href="index.html" className={styles.contacts}>
+                                    CONTATOS
+                                    <p>Contacts</p>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </nav>

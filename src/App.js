@@ -1,14 +1,17 @@
 import './App.css';
-import Teste from './components/header/index.jsx'
+import Header from './components/Header/index.jsx'
 import styles from './App.module.scss'
+import Teste from './components/Main/index.jsx'
+
 function App() {
   return (
     <div className={styles.container}>
-      <header>
-      <div>
-<Teste/>
-      </div>
-      </header>
+        <div>
+          <Header />
+        </div>
+        <div>
+          <Teste/>
+        </div>
     </div>
   );
 }
